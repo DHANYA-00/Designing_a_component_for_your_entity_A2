@@ -13,6 +13,7 @@ function ProductCard() {
 
 
   return (
+    
     <div className='product-card'>
         <div className='product-image'>
         <img src={Headset} alt={productName} />
@@ -27,6 +28,7 @@ function ProductCard() {
         </div>
         <ViewProductButton/>
     </div>
+    
   )
 }
 
