@@ -3,10 +3,14 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 
-import Productcard from './components/productcard.jsx';
+import ProductCard from './components/productcard.jsx';
+
+
 
 function App() {
   const cards = Array.from({ length: 10 });
+
+  
   const gridStyle = {
     display: 'grid',
     gridTemplateColumns: 'repeat(4, 1fr)',
@@ -17,7 +21,7 @@ function App() {
   return (
     <div style={gridStyle}>
       {cards.map((_, index) => (
-        <Productcard key={index} />
+        <ProductCard key={index} />
       ))}
     </div>
   );
